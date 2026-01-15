@@ -6,9 +6,9 @@ Completing the labs will get you ready for writing the assignment code.
 
 **Advanced** Labs are optional, but completing the Advanced Labs will introduce you to more advanced techniques and improve your design skills.
 
-# Lab Task 1 - Setting up your Development Environment
+# Setting up your Development Environment
 
-These labs are all about getting your development environment set up for the rest of the module and preparing to write your assignment code.
+This lab is all about getting your development environment set up for the rest of the module and preparing to write your assignment code.
 
 ## Install the IntelliJ Integrated Development Environment (IDE)
 
@@ -132,7 +132,7 @@ Pull the changes down to your local machine using GitHub Desktop.
 
 Now delete the local `sda` folder and clone it again using GitHub Desktop to ensure you can pull the code down again.
 
-# Learning Git, GitHub and GitHub Desktop
+# Learning Git, GitHub and GitHub Desktop (Advanced)
 
 > ☑ Being proficient in Git and GitHub is an essential skill for software developers. You will need to learn how to use Git and GitHub effectively to manage your code throughout this module and in your future modules.
 
@@ -152,7 +152,7 @@ The key features you need to learn for doing individual work are
 - Pulling changes from GitHub
 
 
-# Lab Task 2 - Coding Standards
+# Implement a Coding Standard
 
 > ☑ A coding standard is a set of rules about code style and naming. Having a consistent coding style makes your code easier to understand and navigate, both for yourself and for others.
 >
@@ -192,7 +192,7 @@ class badStyleClass {
 
 ```
 
-# Lab Task 3 - Learn Markdown
+# Learn Markdown
 
 > ☑ Writing documents in Markdown has become common in software projects because it offers just enough formatting to be useful but requires almost no overhead to write. Markdown files are just text files, so they work well with source code and development tools like Git.
 
@@ -312,7 +312,7 @@ public class Main {
 ```
 
 
-# Lab Task 4 - Name the parts of a class correctly
+# Name the parts of a class correctly
 
 Name the parts of this class using the lecture notes, Google style guide and your own research.
 
@@ -367,7 +367,7 @@ public abstract class Student {
 }
 
 ```
-# Lab Task 5 - Implementing equals(), toString(), and hashCode()
+# Implementing equals(), toString(), and hashCode()
 
 If you implement a class in Java, it is often useful to implement the equals(), toString(), and hashCode() methods for that class. For classes that you want to compare for equality, or use as keys in hash-based collections (like HashMap), you must implement equals() and hashCode() correctly to ensure that your class behaves as expected.
 
@@ -521,7 +521,7 @@ Hash codes are not necessarily unique, but a good `hashCode()` method distribute
 
 > ☑ We strongly advise you use static int hash(Object... values) method of java.util.Objects to generate suitable hash values when there is more than one field involved in the equals. This is surprisingly hard to do well yourself.
 
-# Lab Task 6 - Making a Class Comparable
+# Making a Class Comparable (Advanced)
 > ☑ Implementing the Comparable interface allows objects of your class to be compared to each other, which is useful for sorting and ordering.
 
 For your DiceRoll and TwoDiceRoll class, implement the Comparable<T> interface so that DiceRoll objects can be compared based on their value.
@@ -573,7 +573,6 @@ TwoDiceRoll DiceRoll 1 DiceRoll 1 with value 2
 TwoDiceRoll DiceRoll 1 DiceRoll 6 with value 7
 TwoDiceRoll DiceRoll 6 DiceRoll 6 with value 12
 ```
-
 ## Hints and Tips
 
 The `Comparable<T>` interface defines a natural ordering for objects so they can be sorted, compared, and used in ordered collections. A class implements `Comparable<T>` and overrides `compareTo(T other)`.
