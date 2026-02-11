@@ -2,7 +2,7 @@ package polymorphicsellingpriceproduct;
 
 import java.util.Objects;
 
-class Discount {
+class       Discount {
     public static final Discount NO_DISCOUNT = new Discount();
     private static final double NONE = 0.0d;
     private final double discount;
