@@ -12,9 +12,8 @@ class Product {
         this.shippingCost = shippingCost;
     }
 
-    public Product(FullPrice fullPrice, MinimumPrice minimumPrice, MinimumPrice minimumPrice1, ShippingCost shippingCost) {
-        this.minimumPrice = minimumPrice1;
-        this.shippingCost = shippingCost;
+    public ShippingCost getShippingCost() {
+        return shippingCost;
     }
 
     public void applyDiscount(Discount discount) {
@@ -29,9 +28,5 @@ class Product {
 
     public double getPrice() {
         return sellingPrice.get();
-    }
-
-    public ShippingCost getShippingCost() {
-        return shippingCost;
     }
 }
