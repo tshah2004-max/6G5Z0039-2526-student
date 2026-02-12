@@ -5,12 +5,18 @@ public final class Example {
     public static void run() {
         FullPrice fullPrice = new FullPrice(100.0d);
         MinimumPrice minimumPrice = MinimumPrice.NO_MINIMUM;
-        ShippingCost shippingCost = ShippingCost.NO_SHIPPING_COST;
+        ShippingCost shippingCost = new ShippingCost(10.0d);
         Product product = new Product(fullPrice, minimumPrice, shippingCost);
-        System.out.format("Product before discount %s\n", product.getPrice());
+        System.out.println("Before discount:");
+        System.out.format("Selling Price: %.2f\n", product.getPrice());
+        System.out.format("Shipping Cost: %s\n", product.getShippingCost());
         product.applyDiscount(new Discount(5.00));
-        System.out.format("Product after discount %s\n", product.getPrice());
+        System.out.println("After discount:");
+        System.out.format("Selling Price: %.2f\n", product.getPrice());
+        System.out.format("Shipping Cost: %s\n", product.getShippingCost());
         product.removeDiscount();
-        System.out.format("Product after remove discount %s\n", product.getPrice());
+        System.out.println("After removing discount:");
+        System.out.format("Selling Price: %.2f\n", product.getPrice());
+        System.out.format("Shipping Cost: %s\n", product.getShippingCost());
     }
 }

@@ -38,9 +38,7 @@ public class ShippingCost {
 
     @Override
     public String toString() {
-        return "ShippingCost{" +
-                "ZERO=" + ZERO +
-                ", value=" + value +
-                '}';
+        return String.format("%.2f", value);
     }
+
 }
